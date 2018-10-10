@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <meta charset="UTF-8">
+    <title>form-表单</title>
+    <style>
+      .form-container > div {
+        margin-top: 10px;
+
+      }
+    </style>
+  </head>
+  <body>
+
+    <form class="form-container">
+      <div>
+        <label>用户名：</label>
+        <input placeholder="请输入用户名" maxlength="20" />
+      </div>
+      <div>
+        <label>密码：</label>
+        <!-- input标签type值指定为password时，会表现为密码输入框，输入的密码不可见 -->
+        <input type="password" maxlength="16" />
+      </div>
+      <div>
+        <label>性别：</label>
+        <label>
+          <input type="radio" name="sex" value="1"/>男
+        </label>
+        <label>
+          <input type="radio" name="sex" value="2"/>女
+        </label>
+      </div>
+      <div>
+        <label>爱好：</label>
+        <label>
+          <input type="checkbox" value="1"/>排球
+        </label>
+        <label>
+          <input type="checkbox" value="2"/>羽毛球
+        </label>
+        <label>
+          <input type="checkbox" value="3"/>跑步
+        </label>
+      </div>
+      <div>
+        <label>省份：</label>
+        <select>
+          <option value="1">四川</option>
+          <option value="2">河南</option>
+          <option value="3">河北</option>
+          <option value="4">北京</option>
+        </select>
+      </div>
+      <div>
+        <button>注册</button>
+      </div>
+    </form>
+
+  </body>
+</html>
