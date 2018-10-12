@@ -1,0 +1,27 @@
+.div1 {
+  background: #ddd;
+}
+
+.div1 span {
+  color: red;
+}
+
+#aa {
+  color: blue;
+}
+
+div, span {
+  color: #ff7d00;
+}
+
+[readonly] {
+  border: 1px solid red;
+}
+
+div[title~="divtitle1"] {
+  color: green;
+}
+
+.div1 span:first-child {
+  color: red;
+}
