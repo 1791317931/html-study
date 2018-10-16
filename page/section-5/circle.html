@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <meta charset="UTF-8">
+    <title>circle</title>
+    <style>
+      .circle {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+      }
+      .left-circle {
+        width: 100px;
+        height: 200px;
+        float: left;
+        background: red;
+        border-radius: 100px 0 0 100px;
+      }
+      .right-circle {
+        width: 100px;
+        height: 200px;
+        float: left;
+        background: red;
+        border-radius: 0 100px 100px 0;
+        transform: rotateZ(90deg);
+        transform-origin: left center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="circle">
+      <div class="left-circle"></div>
+      <div class="right-circle"></div>
+    </div>
+  </body>
+</html>
