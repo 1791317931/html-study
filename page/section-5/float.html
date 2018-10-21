@@ -3,8 +3,55 @@
   <head> 
     <meta charset="UTF-8">
     <title>浮动</title>
+    <style>
+      .parent .sub {
+      }
+
+      .parent .sub div {
+        width: 600px;
+        float: left;
+        box-sizing: border-box;
+        border: 1px solid red;
+      }
+
+      .clearfix:before, .clearfix:after {
+        content: ' ';
+        display: table;
+      }
+
+      .clearfix:after {
+        clear: both;
+      }
+
+      .row span:last-child {
+        float: right;
+      }
+    </style>
   </head>
   <body>
-
+    <div class="row">
+      <span>姓名：</span>
+      <span>张三</span>
+    </div>
+    <div class="parent" style="overflow: auto; width: 1200px; border: 1px solid red;">
+      <div class="sub clearfix">
+        <div>
+          111111111111111111111我我111111111111111111111我我111111111111111111111我我111111111111111111111我我111111111111111111111我我
+        </div>
+        <div>
+          2111111111111111111111我我111111111111111111111我我111111111111111111111我我111111111111111111111我我111111111111111111111我我
+        </div>
+        <div>
+          3
+        </div>
+        <div>
+          4
+        </div>
+        <div>
+          5
+        </div>
+      </div>
+      <div>d434234</div>
+    </div>
   </body>
 </html>

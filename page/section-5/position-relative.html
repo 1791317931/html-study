@@ -3,8 +3,27 @@
   <head> 
     <meta charset="UTF-8">
     <title>relative</title>
+    <style>
+      .relative {
+        position: relative;
+        width: 100px;
+        height: 50px;
+        border: 1px solid red;
+      }
+      .absolute {
+        position: absolute;
+        background: red;
+      }
+      .fixed {
+        position: fixed;
+        background: #ff7d00;
+      }
+    </style>
   </head>
   <body>
-
+    <div class="relative">
+      <div class="absolute">12345</div>
+      <div class="fixed">123456</div>
+    </div>
   </body>
 </html>
