@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <meta charset="UTF-8">
+    <title>parent-sub</title>
+    <style>
+      .sub > div {
+        color: blue;
+      }
+      .parent > div {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div>sub-1</div>
+      <div class="sub">
+        sub-2
+        <div>sub-sub-1</div>
+      </div>
+    </div>
+  </body>
+</html>
